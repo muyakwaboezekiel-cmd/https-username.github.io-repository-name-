@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situmbeko Artspace – Botswana Art</title>
+  <style>
+    /* Artistic Botswana-themed background */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1577419318490-b1c8e4c4d432?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      text-align: center;
+      border-bottom: 2px solid #ffd700;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+      color: #ffd700;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    /* Poetic background description */
+    .poetic-bg {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    /* Gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .art-card {
+      background: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .art-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ffd700;
+    }
+
+    .art-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .art-card h3 {
+      margin: 10px 0 5px;
+      font-family: 'Georgia', serif;
+    }
+
+    .art-card p {
+      font-size: 0.95em;
+    }
+
+    .cart-btn {
+      background: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .cart-btn:hover {
+      background: #ffc107;
+    }
+
+    /* About & contact */
+    .info-box {
+      background: rgba(0,0,0,0.6);
+      margin: 20px auto;
+      padding: 25px;
+      max-width: 900px;
+      border-radius: 15px;
+    }
+
+    /* Comments */
+    .comments {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .comment-box {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 30px;
+      border-top: 2px solid #ffd700;
+    }
+
+    .social a {
+      color: #ffd700;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffc107;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Situmbeko Artspace</h1>
+    <nav>
+      <a href="#poetic">Background</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About Us</a>
+      <a href="#comments">Comments</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Poetic Artistic Background -->
+  <section id="poetic">
+    <div class="poetic-bg">
+      <p>
+        Amid the shimmering flow of the Chobe River, where sunlight dances like diamonds
+        on tranquil waters, our art emerges—echoes of Botswana's soul captured in
+        terracotta, earthy tones, and vivid imagination. Each brushstroke whispers
+        the heritage of Kasane, the pulse of the land, and the dreams of its people.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="art-card">
+      <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" alt="Terracotta Cooking">
+      <h3>Terracotta Cooking</h3>
+      <p>Traditional Botswana culinary culture captured in earthy tones.</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+    <div class="art-card">
+      <img src="https://images.unsplash.com/photo-1526481280692-3c5b0e29c64e?auto=format&fit=crop&w=800&q=80" alt="Cream and Brown">
+      <h3>Cream and Brown</h3>
+      <p>Modern interpretation of Botswana's landscape and heritage.</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+    <div class="art-card">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Diamond Spark">
+      <h3>Diamond Spark</h3>
+      <p>Reflecting Botswana’s diamonds and sparkling cultural brilliance.</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+    <div class="art-card">
+      <img src="https://images.unsplash.com/photo-1551488835-032f0bce422e?auto=format&fit=crop&w=800&q=80" alt="Chobe River Sunset">
+      <h3>Chobe River Sunset</h3>
+      <p>Sunset over Chobe River, blending sky, water, and heritage.</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+    <div class="art-card">
+      <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18?auto=format&fit=crop&w=800&q=80" alt="Botswana Abstract">
+      <h3>Botswana Abstract</h3>
+      <p>Abstract expression of Botswana's vibrant culture and landscapes.</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="info-box">
+    <h2>About Us</h2>
+    <p>
+      Situmbeko Artspace celebrates Botswana’s artistic spirit, blending heritage with modern creativity.
+      Based in Kasane, our mission is to share the beauty of our land, the Chobe River, and the diamond-rich
+      culture with an international audience. Every piece tells a story, a whisper of Botswana’s heart.
+    </p>
+  </section>
+
+  <!-- Comments Section -->
+  <section id="comments" class="comments">
+    <h2>Comments</h2>
+    <div class="comment-box">
+      <p><strong>Alice:</strong> The gallery beautifully captures Botswana’s soul!</p>
+    </div>
+    <div class="comment-box">
+      <p><strong>Mohammed:</strong> Stunning artwork! Love the diamond and river inspiration.</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Comment" rows="4" required></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="info-box">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social">
+      <a href="https://facebook.com/tshepo" target="_blank">Facebook</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="https://youtube.com" target="_blank">YouTube</a> |
+      <a href="https://wa.me/267XXXXXXXX" target="_blank">WhatsApp</a>
+    </div>
+    <p>&copy; 2025 Situmbeko Artspace | International Botswana Art</p>
+  </footer>
+
+</body>
+</html>
